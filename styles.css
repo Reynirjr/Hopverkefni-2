@@ -1,3 +1,4 @@
+/*Forsíða*/
 header{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -32,8 +33,17 @@ header ul li a{
 main ul {
     display: flex;
     flex-wrap: wrap;
+    grid-gap: 1em;
     grid-column: 12 / span 3;
     list-style: none;
     margin: 2rem;
     padding: 5rem;
 }
+
+main ul img {
+    width: 250px; 
+    height: 150px; 
+    object-fit: cover;
+}
+
+/*Vörusíða*/
