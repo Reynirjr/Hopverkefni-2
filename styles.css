@@ -28,3 +28,7 @@ header ul li a{
     text-decoration: none;
     padding: 5px;
 }
+
+ main ul {
+    list-style: none;
+}
