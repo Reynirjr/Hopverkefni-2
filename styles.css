@@ -1,0 +1,30 @@
+header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+header h1{
+    grid-column: 1 / span 3;
+    margin: 0;
+    padding: 0;
+}
+header ul{
+    grid-column: 10 / span 3;
+    color: #fff;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
