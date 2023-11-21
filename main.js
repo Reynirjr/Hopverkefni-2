@@ -10,7 +10,7 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6')
         const markup = `
             <li>
                 <a href="./sidur/vorusida.html?id=${product.id}">
-                <img src="${product.image}" alt="${product.title}" style="width: 250px; height: 150px; object-scale-down;">
+                <img src="${product.image}" alt="${product.title}">
                 <div>
                     <h3>${product.title}</h3>
                     <p>${product.category_title}</p>

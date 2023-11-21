@@ -1,3 +1,4 @@
+/*Forsíða*/
 header{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -38,3 +39,11 @@ main ul {
     margin: 2rem;
     padding: 5rem;
 }
+
+main ul img {
+    width: 250px; 
+    height: 150px; 
+    object-fit: cover;
+}
+
+/*Vörusíða*/
