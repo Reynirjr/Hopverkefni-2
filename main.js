@@ -3,6 +3,9 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6')
         return Response.json();
 })
 .then(data => {
+    const productContainer = document.querySelector('#vorurnar');
+    productContainer.innerHTML = '';
+
     data.items.forEach(product => {
         const markup = `
             <li>
@@ -14,8 +17,26 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6')
                 </div>
             </li>`;
 
-        document.querySelector('#voruflokkar').insertAdjacentHTML('beforeend', markup);
+        productContainer.insertAdjacentHTML('beforeend', markup);
     });
 })
 .catch(error => console.log(error));
+fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/categories')
+    .then(Response => {
+        return Response.json();
+})
+    .then(data => {
+        const categoryContainer = document.querySelector('#voruflokkar');
+        categoryContainer.innerHTML = ''; 
+
+        data.items.forEach(category => {
+            const markup = `
+            <li>
+                ${category.title}
+            </li>`;
+
+            categoryContainer.insertAdjacentHTML('beforeend', markup);
+        });
+    })
+
     
