@@ -13,7 +13,7 @@ if (productId) {
             displayProductDetails(product);
 
            
-            return fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=3&category=${product.category_id}`);
+            return fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=3&category=${product.category_id}&exclude=${product.id}`);
         })
         .then(response => response.json())
         .then(data => {
@@ -34,7 +34,7 @@ function displayProductDetails(product) {
 }
 
 function displaySimilarProducts(similarProducts) {
-    let similarProductsMarkup = '<h3>Similar Products:</h3>';
+    let similarProductsMarkup = '<h3>Sjá líka:</h3>';
 
     similarProducts.forEach(product => {
         similarProductsMarkup += `
