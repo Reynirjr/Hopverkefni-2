@@ -4,7 +4,7 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6')
 })
 .then(data => {
     const productContainer = document.querySelector('#vorurnar');
-    productContainer.innerHTML = ''; // Clear existing content
+    productContainer.innerHTML = '';
 
     data.items.forEach(product => {
         const markup = `
@@ -27,7 +27,7 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/categories')
 })
     .then(data => {
         const categoryContainer = document.querySelector('#voruflokkar');
-        categoryContainer.innerHTML = ''; // Clear existing content
+        categoryContainer.innerHTML = ''; 
 
         data.items.forEach(category => {
             const markup = `
