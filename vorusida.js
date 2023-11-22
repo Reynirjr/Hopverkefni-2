@@ -39,8 +39,14 @@ function displayProductDetails(product) {
 
 
 function displayProducts(products, containerId, categoryTitle) {
+    const titleElement = document.createElement('h3');
+    titleElement.textContent = `Meira úr: ${categoryTitle}`;
+
     const container = document.getElementById(containerId);
-    let productsMarkup = `<h3>Meira úr: ${categoryTitle}</h3>`;
+
+    container.innerHTML = '';
+    container.before(titleElement);
+    let productsMarkup ='';
 
     products.forEach(product => {
         productsMarkup += `
