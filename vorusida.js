@@ -38,11 +38,13 @@ function displayLikarVorur(similarProducts) {
 
     similarProducts.forEach(product => {
         likarVorurMarkup += `
+        <a href="./vorusida.html?id=${product.id}">
         <div> 
             <img src="${product.image}" alt="${product.title}"> 
             <p>${product.title}</p>
             <p>Price: ${product.price}</p>
-        </div>`;
+        </div>
+        </a>`;
     });
 
     document.getElementById('likar-vorur').innerHTML = likarVorurMarkup;
