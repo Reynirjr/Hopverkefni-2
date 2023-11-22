@@ -15,6 +15,6 @@ for (let i = 0; i < pages; i++) {
   // Display the products on the current page
   console.log(`Page ${i + 1}:`, page);
 }
-        });
+ });
     
-    .catch(error => console.log(error));
+    
