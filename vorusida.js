@@ -13,11 +13,14 @@ if (productId) {
             displayProductDetails(product);
 
            
-            return fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=3&category=${product.category_id}`);
+            return fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=3&category=${product.category_id}`)
+                .then(response => response.json())
+                .then(data => {
+                    return { similarProducts: data.items, categoryTitle: product.category_title };
+                });
         })
-        .then(response => response.json())
-        .then(data => {
-            displayLikarVorur(data.items); 
+        .then(({ similarProducts, categoryTitle }) => {
+            displayLikarVorur(similarProducts , categoryTitle); 
         })
         .catch(error => console.log(error));
 }
@@ -27,14 +30,14 @@ function displayProductDetails(product) {
     <h2>${product.title}</h2>
     <img src="${product.image}" alt="${product.title}">
     <p>Verð: ${product.price}</p>
-    <p>Category: ${product.category_title}</p>
+    <p>Flokkur: ${product.category_title}</p>
     <p>${product.description}</p>
     `;
     adalVoruBox.innerHTML = productMarkup;
 }
 
-function displayLikarVorur(similarProducts) {
-    let likarVorurMarkup = '<h3>Sjá líka:</h3>';
+function displayLikarVorur(similarProducts, categoryTitle) {
+    let likarVorurMarkup = `<h3>Meira úr: ${categoryTitle}</h3>`;
 
     similarProducts.forEach(product => {
         likarVorurMarkup += `
