@@ -54,10 +54,13 @@ function displayProducts(products, containerId, categoryTitle) {
                 <div class="box"> 
                     <img src="${product.image}" alt="${product.title}" style="max-width: 100px;"> 
                     <h3>${product.title}</h3>
+                </a>
+                <a href="./flokkasida.html?id=${product.category_id}">
                     <p>${product.category_title}</p>
+                </a>
                     <p>${product.price} kr.-</p>
                 </div>
-            </a>`;
+            `;
     });
 
     container.innerHTML = productsMarkup;

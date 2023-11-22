@@ -13,10 +13,13 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6')
                 <img src="${product.image}" alt="${product.title}">
                 <div>
                     <h3>${product.title}</h3>
+                </a>
+                <a href="./sidur/flokkasida.html?id=${product.category_id}">
                     <p>${product.category_title}</p>
+                </a>
                     <p>Verð: $${product.price}</p>
                 </div>
-                </a>
+                
             </li>`;
 
         productContainer.insertAdjacentHTML('beforeend', markup);
