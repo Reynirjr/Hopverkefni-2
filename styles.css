@@ -36,37 +36,38 @@ main ul {
     grid-gap: 1em;
     grid-column: 12 / span 3;
     list-style: none;
-    margin: 2rem;
-    padding: 5rem;
+    justify-content: center;    
+    margin: 1rem;
+    padding: 1rem;
 }
 
 main ul img {
-    width: 250px; 
-    height: 150px; 
+    width: 420px; 
+    height: 280px; 
     object-fit: cover;
 }
 
 /*Vörusíða*/
 
 
-
-Main div {
-
-}
-
-Main div img {
-    width: 250px;
-    height: 150px;
+#adal-Vara img {
+    width: 500px;
+    height: 300px;
     object-fit: cover;
 }
 
-.LikarVorur {
+
+#likar-vorur {
     display: flex;
     flex-wrap: wrap;
     grid-gap: 1em;
     grid-column: 12 / span 3;
-    list-style: none;
     margin: 2rem;
     padding: 5rem;
+}
 
+#likar-vorur img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
 }

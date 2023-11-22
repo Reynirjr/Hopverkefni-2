@@ -29,8 +29,8 @@ function displayProductDetails(product) {
     const productMarkup = `
     <h2>${product.title}</h2>
     <img src="${product.image}" alt="${product.title}">
-    <p>Verð: ${product.price}</p>
     <p>Flokkur: ${product.category_title}</p>
+    <p>Verð: ${product.price}</p>
     <p>${product.description}</p>
     `;
     adalVoruBox.innerHTML = productMarkup;
