@@ -1,7 +1,7 @@
 const mainProductContainer = document.querySelector('#main-product-container');
-const similarProductsContainer = document.createElement('div');
-similarProductsContainer.id = 'similar-products-container';
-document.querySelector('main').appendChild(similarProductsContainer);
+const likarVorur = document.createElement('div');
+likarVorur.id = 'likar-vorur';
+document.querySelector('main').appendChild(likarVorur);
 
 const params = new URLSearchParams(window.location.search);
 const productId = params.get('id');
@@ -13,11 +13,11 @@ if (productId) {
             displayProductDetails(product);
 
            
-            return fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=3&category=${product.category_id}&exclude=${product.id}`);
+            return fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=3&category=${product.category_id}`);
         })
         .then(response => response.json())
         .then(data => {
-            displaySimilarProducts(data.items); 
+            displayLikarVorur(data.items); 
         })
         .catch(error => console.log(error));
 }
@@ -33,11 +33,11 @@ function displayProductDetails(product) {
     mainProductContainer.innerHTML = productMarkup;
 }
 
-function displaySimilarProducts(similarProducts) {
-    let similarProductsMarkup = '<h3>Sjá líka:</h3>';
+function displayLikarVorur(similarProducts) {
+    let likarVorurMarkup = '<h3>Sjá líka:</h3>';
 
     similarProducts.forEach(product => {
-        similarProductsMarkup += `
+        likarVorurMarkup += `
         <div> 
             <img src="${product.image}" alt="${product.title}"> 
             <p>${product.title}</p>
@@ -45,5 +45,5 @@ function displaySimilarProducts(similarProducts) {
         </div>`;
     });
 
-    similarProductsContainer.innerHTML = similarProductsMarkup;
+    document.getElementById('likar-vorur').innerHTML = likarVorurMarkup;
 }
