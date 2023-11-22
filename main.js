@@ -33,6 +33,7 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/categories')
 
         data.items.forEach(category => {
             const markup = `
+            <a href="./sidur/flokkasida.html?id=${category.id}">
             <li>
                 ${category.title}
             </li>`;
