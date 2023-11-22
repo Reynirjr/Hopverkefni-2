@@ -1,4 +1,4 @@
-const mainProductContainer = document.querySelector('#main-product-container');
+const adalVoruBox = document.querySelector('#adal-Vara');
 const likarVorur = document.createElement('div');
 likarVorur.id = 'likar-vorur';
 document.querySelector('main').appendChild(likarVorur);
@@ -30,7 +30,7 @@ function displayProductDetails(product) {
     <p>Category: ${product.category_title}</p>
     <p>${product.description}</p>
     `;
-    mainProductContainer.innerHTML = productMarkup;
+    adalVoruBox.innerHTML = productMarkup;
 }
 
 function displayLikarVorur(similarProducts) {
