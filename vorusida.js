@@ -38,8 +38,6 @@ function displayProductDetails(product) {
 }
 
 
-
-
 function displayProducts(products, containerId, categoryTitle) {
     const container = document.getElementById(containerId);
     let productsMarkup = `<h3>Meira úr: ${categoryTitle}</h3>`;
