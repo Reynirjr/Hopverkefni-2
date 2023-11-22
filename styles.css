@@ -14,6 +14,7 @@ header h1{
     grid-column: 1 / span 3;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 header ul{
     grid-column: 10 / span 3;
@@ -50,6 +51,10 @@ main ul img {
 /*Vörusíða*/
 
 
+#adal-Vara {
+
+}
+
 #adal-Vara img {
     width: 500px;
     height: 300px;
@@ -66,8 +71,17 @@ main ul img {
     padding: 5rem;
 }
 
+
 #likar-vorur img {
     width: 250px;
     height: 150px;
     object-fit: cover;
+}
+
+
+/*almennt*/
+
+header h1 a {
+    text-decoration: none;
+    color:#fff;
 }
