@@ -26,7 +26,7 @@ function displayProductDetails(product) {
     const productMarkup = `
     <h2>${product.title}</h2>
     <img src="${product.image}" alt="${product.title}">
-    <p>Price: ${product.price}</p>
+    <p>Verð: ${product.price}</p>
     <p>Category: ${product.category_title}</p>
     <p>${product.description}</p>
     `;
@@ -42,7 +42,7 @@ function displayLikarVorur(similarProducts) {
         <div> 
             <img src="${product.image}" alt="${product.title}"> 
             <p>${product.title}</p>
-            <p>Price: ${product.price}</p>
+            <p>Verð: ${product.price}</p>
         </div>
         </a>`;
     });

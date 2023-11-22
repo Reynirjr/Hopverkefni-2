@@ -14,7 +14,7 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6')
                 <div>
                     <h3>${product.title}</h3>
                     <p>${product.category_title}</p>
-                    <p>Price: $${product.price}</p>
+                    <p>Verð: $${product.price}</p>
                 </div>
                 </a>
             </li>`;
