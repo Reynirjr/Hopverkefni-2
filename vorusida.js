@@ -20,9 +20,10 @@ if (productId) {
                 });
         })
         .then(({ similarProducts, categoryTitle }) => {
-            displayLikarVorur(similarProducts , categoryTitle); 
+            displayProducts(similarProducts, 'likar-vorur', categoryTitle); 
         })
         .catch(error => console.log(error));
+        
 }
 
 function displayProductDetails(product) {
@@ -36,19 +37,25 @@ function displayProductDetails(product) {
     adalVoruBox.innerHTML = productMarkup;
 }
 
-function displayLikarVorur(similarProducts, categoryTitle) {
-    let likarVorurMarkup = `<h3>Meira úr: ${categoryTitle}</h3>`;
 
-    similarProducts.forEach(product => {
-        likarVorurMarkup += `
-        <a href="./vorusida.html?id=${product.id}">
-        <div> 
-            <img src="${product.image}" alt="${product.title}"> 
-            <p>${product.title}</p>
-            <p>Verð: ${product.price}</p>
-        </div>
-        </a>`;
+
+
+function displayProducts(products, containerId, categoryTitle) {
+    const container = document.getElementById(containerId);
+    let productsMarkup = `<h3>Meira úr: ${categoryTitle}</h3>`;
+
+    products.forEach(product => {
+        productsMarkup += `
+            <a href="./vorusida.html?id=${product.id}">
+                <div class="box"> 
+                    <img src="${product.image}" alt="${product.title}" style="max-width: 100px;"> 
+                    <h3>${product.title}</h3>
+                    <p>${product.category_title}</p>
+                    <p>${product.price} kr.-</p>
+                    <a href="/product/${product.id}">View Product</a>
+                </div>
+            </a>`;
     });
 
-    document.getElementById('likar-vorur').innerHTML = likarVorurMarkup;
+    container.innerHTML = productsMarkup;
 }
