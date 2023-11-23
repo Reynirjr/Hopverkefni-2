@@ -48,6 +48,22 @@ main ul img {
     object-fit: cover;
 }
 
+.takki {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
 /*Vörusíða*/
 
 
