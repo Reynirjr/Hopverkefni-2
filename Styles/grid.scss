@@ -57,8 +57,15 @@ main ul {
     }
 }
 
-@media (min-width: 900px){
-    .varaOgLysing{
+#varaOgLysing{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+@media (min-width: 900px)
+{
+    #varaOgLysing{
         flex-direction: row;
     }
 }
@@ -68,7 +75,7 @@ main ul {
     grid-template-columns: repeat(1, 1fr); 
 }
 
-@media (min-width: 650px)
+@media (min-width: 900px)
 {
     #likar-vorur {
         grid-template-columns: repeat(3, 1fr); 

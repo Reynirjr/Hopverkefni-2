@@ -28,7 +28,7 @@ if (productId) {
 
 function displayProductDetails(product) {
     const productMarkup = `
-    <div class="varaOgLysing">
+    <div ="varaOgLysing">
     <div class="vara">
     <img src="${product.image}" alt="${product.title}">
     </div>
