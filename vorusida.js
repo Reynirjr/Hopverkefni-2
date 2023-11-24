@@ -28,13 +28,19 @@ if (productId) {
 
 function displayProductDetails(product) {
     const productMarkup = `
-    <h2>${product.title}</h2>
+    <div class="varaOgLysing">
+    <div class="vara">
     <img src="${product.image}" alt="${product.title}">
+    </div>
+    <div class="vorulysing">
+    <h2>${product.title}</h2>
     <a href="./flokkasida.html?id=${product.category_id}">
     <p>Flokkur: ${product.category_title}</p>
     </a>
     <p>Verð: ${product.price}</p>
     <p>${product.description}</p>
+    </div>
+    </div>
     `;
     adalVoruBox.innerHTML = productMarkup;
 }
