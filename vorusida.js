@@ -32,7 +32,7 @@ function displayProductDetails(product) {
     <div class="vara">
     <img src="${product.image}" alt="${product.title}">
     </div>
-    <div class="vorulysing">
+    <div class="voruLysing">
     <h2>${product.title}</h2>
     <a href="./flokkasida.html?id=${product.category_id}">
     <p>Flokkur: ${product.category_title}</p>

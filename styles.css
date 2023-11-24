@@ -69,6 +69,7 @@ main ul img {
     text-decoration: none;
     font-size: 16px;
     border-radius: 4px;
+    margin-left: 20px;
 }
 .takki:hover {
     background-color: #fff;
@@ -120,6 +121,11 @@ main ul img {
 .varaOgLysing{
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
+}
+.voruLysing {
+    display: flex;
+    flex-direction: column;
     margin-left: 20px;
 }
 #adal-vara a {
@@ -224,6 +230,9 @@ main ul img {
 }
 /*almennt*/
 
+h3 {
+    margin-left: 20px;
+}
 
 header h1 a {
     text-decoration: none;
