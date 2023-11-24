@@ -30,7 +30,9 @@ function displayProductDetails(product) {
     const productMarkup = `
     <h2>${product.title}</h2>
     <img src="${product.image}" alt="${product.title}">
+    <a href="./flokkasida.html?id=${product.category_id}">
     <p>Flokkur: ${product.category_title}</p>
+    </a>
     <p>Verð: ${product.price}</p>
     <p>${product.description}</p>
     `;
