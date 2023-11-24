@@ -60,7 +60,7 @@ function displayProducts(products, containerId, categoryTitle) {
         productsMarkup += `
         <div class="box">
         <a href="./vorusida.html?id=${product.id}">
-            <img src="${product.image}" alt="${product.title}" style="max-width: 100px;"> 
+            <img src="${product.image}" alt="${product.title}"> 
             <h3>${product.title}</h3>
         </a>
         <p>
