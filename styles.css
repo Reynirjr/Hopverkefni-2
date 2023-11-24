@@ -69,6 +69,7 @@ main ul img {
     text-decoration: none;
     font-size: 16px;
     border-radius: 4px;
+    margin-left: 20px;
 }
 .takki:hover {
     background-color: #fff;
@@ -119,7 +120,15 @@ main ul img {
 /*Vörusíða*/
 .varaOgLysing{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-left: 20px;
+}
+@media (min-width: 900px){
+    .varaOgLysing{
+        flex-direction: row;
+    }
+}
+.voruLysing {
     margin-left: 20px;
 }
 #adal-vara a {
@@ -223,6 +232,10 @@ main ul img {
     }
 }
 /*almennt*/
+
+h3 {
+    margin-left:20px;
+}
 
 
 header h1 a {
