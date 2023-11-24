@@ -225,6 +225,11 @@ header ul li a {
   padding: 20px;
 }
 
+.forsidu-takki {
+  display: flex;
+  justify-content: center;
+}
+
 /* Vörusíða */
 .box {
   border: 1px solid #ccc;
