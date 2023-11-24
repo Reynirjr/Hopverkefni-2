@@ -69,7 +69,6 @@ main ul img {
     text-decoration: none;
     font-size: 16px;
     border-radius: 4px;
-    margin-left: 20px;
 }
 .takki:hover {
     background-color: #fff;
@@ -120,19 +119,8 @@ main ul img {
 /*Vörusíða*/
 .varaOgLysing{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 20px;
-}
-.voruLysing {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-@media (min-width: 1000px)
-{
-    .varaOgLysing {
-        flex-direction: row;
-    }
 }
 #adal-vara a {
     text-decoration: none;
@@ -183,7 +171,7 @@ main ul img {
 
 .box img {
     max-width: 100%;
-    height: auto;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -236,9 +224,6 @@ main ul img {
 }
 /*almennt*/
 
-h3 {
-    margin-left: 20px;
-}
 
 header h1 a {
     text-decoration: none;
