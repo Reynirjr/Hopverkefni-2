@@ -1,0 +1,105 @@
+header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header h1{
+    grid-column: 1 / span 3;
+}
+
+header ul{
+    grid-column: 10 / span 3;
+}
+
+.haus-eitt {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+main ul {
+    grid-gap: 1em;
+    grid-column: 12 / span 3;
+}
+
+
+#voruflokkar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+
+@media (min-width: 400px) {
+    #voruflokkar {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1000px) {
+    #voruflokkar {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
+
+#nyjar-vorur {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+@media (min-width: 900px){
+    #nyjar-vorur {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media (min-width: 1350px){
+    #nyjar-vorur {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (min-width: 900px){
+    .varaOgLysing{
+        flex-direction: row;
+    }
+}
+
+#likar-vorur {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+@media (min-width: 650px)
+{
+    #likar-vorur {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+#vorurnar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+@media (min-width: 650px)
+{
+    #vorurnar {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+#vorurUrFlokki {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+@media (min-width: 900px)
+{
+    #vorurUrFlokki {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media (min-width: 1350px)
+{
+    #vorurUrFlokki {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}

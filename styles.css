@@ -1,252 +1,286 @@
-
-/*Forsíða*/
-header{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    gap: 10px;
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-    text-align: left;
-    margin-bottom: 10px;
-}
-header h1{
-    grid-column: 1 / span 3;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    margin-left: 5px;
-}
-header ul{
-    grid-column: 10 / span 3;
-    color: #fff;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-}
-header ul li a{
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
-}
-.haus-eitt {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
+@charset "UTF-8";
+/*almennt*/
+h3 {
+  margin-left: 20px;
 }
 
-main ul {
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 1em;
-    grid-column: 12 / span 3;
-    list-style: none;
-    justify-content: center;    
-    margin: 1rem;
-    padding: 1rem;
+header h1 a {
+  text-decoration: none;
+  color: #fff;
 }
 
-main ul img {
-    width: 420px; 
-    height: 280px; 
-    object-fit: cover;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-.takki {
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-    border: none;
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 4px;
-    margin-left: 20px;
-}
-.takki:hover {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-}
-
-#voruflokkar {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 20px; 
-    padding: 20px;
-    
-}
-#voruflokkar li {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #000000;
-}
-
-@media (min-width: 400px) {
-    #voruflokkar {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (min-width: 1000px) {
-    #voruflokkar {
-        grid-template-columns: repeat(5, 1fr); 
-    }
-}
-#nyjar-vorur {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 10px; 
-    padding: 20px;
-}
-@media (min-width: 900px){
-    #nyjar-vorur {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-@media (min-width: 1350px){
-    #nyjar-vorur {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-}
-/*Vörusíða*/
-.varaOgLysing{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-@media (min-width: 900px){
-    .varaOgLysing{
-        flex-direction: row;
-    }
-}
-.voruLysing {
-    margin-left: 20px;
-}
-#adal-vara a {
-    text-decoration: none;
-    color: #000;
-}
-#adal-vara a:hover {
-    text-decoration: underline;
-}
-#adal-Vara img {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-}
-
-#likar-vorur {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 10px; 
-    padding: 20px;
-}
-
-#likar-vorur a {
-    text-decoration: none;
-    color: #000;
-}
-#likar-vorur a:hover {
-    text-decoration: underline;
-}
-@media (min-width: 650px)
-{
-    #likar-vorur {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-}
-
-.box {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 10px;
-
-}
-
-.box img {
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.box h3, .box p {
-    margin: 5px 0;
-}
-/*vörulistinn*/
-#vorurnar {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 10px; 
-    padding: 20px;
-}
-@media (min-width: 650px)
-{
-    #vorurnar {
-        grid-template-columns: repeat(2, 1fr); 
-    }
+a:hover {
+  text-decoration: underline;
 }
 
 /*flokkasíða*/
 #vorurUrFlokki {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 10px; 
-    padding: 20px;
+  gap: 10px;
+  padding: 20px;
 }
+
 .boxy {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 10px;
-}
- @media (min-width: 900px)
-{
-    #vorurUrFlokki {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-@media (min-width: 1350px)
-{
-    #vorurUrFlokki {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-}
-/*almennt*/
-
-h3 {
-    margin-left:20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
-
-header h1 a {
-    text-decoration: none;
-    color:#fff;
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
+main ul img {
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
 }
-a:hover {
-    text-decoration: underline;
+
+#nyjar-vorur {
+  gap: 10px;
+  padding: 20px;
 }
+
+#voruflokkar {
+  gap: 20px;
+  padding: 20px;
+}
+
+#voruflokkar li {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header h1 {
+  grid-column: 1/span 3;
+}
+
+header ul {
+  grid-column: 10/span 3;
+}
+
+.haus-eitt {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+main ul {
+  grid-gap: 1em;
+  grid-column: 12/span 3;
+}
+
+#voruflokkar {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 400px) {
+  #voruflokkar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  #voruflokkar {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+#nyjar-vorur {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 900px) {
+  #nyjar-vorur {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1350px) {
+  #nyjar-vorur {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .varaOgLysing {
+    flex-direction: row;
+  }
+}
+#likar-vorur {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 650px) {
+  #likar-vorur {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#vorurnar {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 650px) {
+  #vorurnar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#vorurUrFlokki {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 900px) {
+  #vorurUrFlokki {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1350px) {
+  #vorurUrFlokki {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+header {
+  align-items: center;
+  gap: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+header ul {
+  color: #fff;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.haus-eitt {
+  text-align: center;
+}
+
+.takki {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.takki:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/*vörulistinn*/
+#vorurnar {
+  gap: 10px;
+  padding: 20px;
+}
+
+/*Vörusíða*/
+.varaOgLysing {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.voruLysing {
+  margin-left: 20px;
+}
+
+#adal-vara a {
+  text-decoration: none;
+  color: #000;
+}
+
+#adal-vara a:hover {
+  text-decoration: underline;
+}
+
+#adal-Vara img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#likar-vorur {
+  gap: 10px;
+  padding: 20px;
+}
+
+#likar-vorur a {
+  text-decoration: none;
+  color: #000;
+}
+
+#likar-vorur a:hover {
+  text-decoration: underline;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.box img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.box h3, .box p {
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
