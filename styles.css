@@ -120,13 +120,19 @@ main ul img {
 /*Vörusíða*/
 .varaOgLysing{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 20px;
 }
 .voruLysing {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+}
+@media (min-width: 1000px)
+{
+    .varaOgLysing {
+        flex-direction: row;
+    }
 }
 #adal-vara a {
     text-decoration: none;
