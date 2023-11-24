@@ -71,6 +71,11 @@ main ul img {
     font-size: 16px;
     border-radius: 4px;
 }
+.takki:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
 
 
 /*Vörusíða*/
