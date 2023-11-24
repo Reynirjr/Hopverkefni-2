@@ -225,7 +225,7 @@ main ul img {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
-@media (min-width: 1200px)
+@media (min-width: 1350px)
 {
     #vorurUrFlokki {
         grid-template-columns: repeat(3, 1fr); 
