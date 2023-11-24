@@ -1,3 +1,6 @@
 { "extends": ["stylelint-config-standard"],
-"customSyntax": "postcss-lit"
+"plugins": ["stylelint-scss"],
+"rules": {
+    "import-notation": null
+}
 }

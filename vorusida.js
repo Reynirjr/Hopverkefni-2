@@ -1,4 +1,4 @@
-const adalVoruBox = document.querySelector('#adal-Vara');
+const adalVoruBox = document.querySelector('#adal-vara');
 const likarVorur = document.createElement('div');
 likarVorur.id = 'likar-vorur';
 document.querySelector('main').appendChild(likarVorur);
@@ -28,11 +28,11 @@ if (productId) {
 
 function displayProductDetails(product) {
     const productMarkup = `
-    <div ="varaOgLysing">
+    <div ="vara-og-lysing">
     <div class="vara">
     <img src="${product.image}" alt="${product.title}">
     </div>
-    <div class="voruLysing">
+    <div class="voru-lysing">
     <h2>${product.title}</h2>
     <a href="./flokkasida.html?id=${product.category_id}">
     <p>Flokkur: ${product.category_title}</p>

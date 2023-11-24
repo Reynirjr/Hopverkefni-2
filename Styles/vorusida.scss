@@ -1,20 +1,30 @@
-/*Vörusíða*/
 
 
-.voruLysing {
+/* Vörusíða */
+
+.box {
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.box img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.voru-lysing {
     margin-left: 20px;
 }
+
 #adal-vara a {
     text-decoration: none;
     color: #000;
-}
-#adal-vara a:hover {
-    text-decoration: underline;
-}
-#adal-Vara img {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
 }
 
 #likar-vorur {
@@ -26,27 +36,19 @@
     text-decoration: none;
     color: #000;
 }
-#likar-vorur a:hover {
+
+#adal-vara img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#adal-vara a:hover {
     text-decoration: underline;
 }
 
-.box {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 10px;
-
-}
-
-.box img {
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
+#likar-vorur a:hover {
+    text-decoration: underline;
 }
 
 .box h3, .box p {

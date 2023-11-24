@@ -19,7 +19,7 @@ fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?category=${c
                         <p>Verð: ${product.price}</p>
                     </div>
                     `;
-            document.querySelector('#vorurUrFlokki').insertAdjacentHTML("beforeend", productMarkup);
+            document.querySelector('#vorur-ur-flokki').insertAdjacentHTML("beforeend", productMarkup);
             })
         })
     .catch(error => console.log(error));

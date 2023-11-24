@@ -1,16 +1,14 @@
-/*flokkasíða*/
-#vorurUrFlokki {
+/* flokkasíða */
+#vorur-ur-flokki {
     gap: 10px; 
     padding: 20px;
 }
+
 .boxy {
     border: 1px solid #ccc;
-    padding: 10px;
     text-align: center;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 10px;
 }

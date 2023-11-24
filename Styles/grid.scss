@@ -23,20 +23,20 @@ main ul {
 }
 
 
-#voruflokkar {
+#voru-flokkar {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
 }
 
 
-@media (min-width: 400px) {
-    #voruflokkar {
+@media (width >= 400px) {
+    #voru-flokkar {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-@media (min-width: 1000px) {
-    #voruflokkar {
+@media (width >= 1000px) {
+    #voru-flokkar {
         grid-template-columns: repeat(5, 1fr); 
     }
 }
@@ -46,26 +46,27 @@ main ul {
     grid-template-columns: repeat(1, 1fr); 
 }
 
-@media (min-width: 900px){
+@media (width >= 900px){
     #nyjar-vorur {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
-@media (min-width: 1350px){
+
+@media (width >= 1350px){
     #nyjar-vorur {
         grid-template-columns: repeat(3, 1fr); 
     }
 }
 
-#varaOgLysing{
+#vara-og-lysing{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
-@media (min-width: 900px)
+@media (width >= 900px)
 {
-    #varaOgLysing{
+    #vara-og-lysing{
         flex-direction: row;
     }
 }
@@ -75,7 +76,7 @@ main ul {
     grid-template-columns: repeat(1, 1fr); 
 }
 
-@media (min-width: 900px)
+@media (width >= 900px)
 {
     #likar-vorur {
         grid-template-columns: repeat(3, 1fr); 
@@ -86,27 +87,29 @@ main ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
 }
-@media (min-width: 650px)
+
+@media (width >= 650px)
 {
     #vorurnar {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-#vorurUrFlokki {
+#vorur-ur-flokki {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
 }
 
-@media (min-width: 900px)
+@media (width >= 900px)
 {
-    #vorurUrFlokki {
+    #vorur-ur-flokki {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
-@media (min-width: 1350px)
+
+@media (width >= 1350px)
 {
-    #vorurUrFlokki {
+    #vorur-ur-flokki {
         grid-template-columns: repeat(3, 1fr); 
     }
 }

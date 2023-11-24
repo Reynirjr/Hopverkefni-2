@@ -1,12 +1,7 @@
 @charset "UTF-8";
-/*almennt*/
+/* almennt */
 h3 {
   margin-left: 20px;
-}
-
-header h1 a {
-  text-decoration: none;
-  color: #fff;
 }
 
 a {
@@ -14,19 +9,23 @@ a {
   color: #000;
 }
 
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
 a:hover {
   text-decoration: underline;
 }
 
-/*flokkasíða*/
-#vorurUrFlokki {
+/* flokkasíða */
+#vorur-ur-flokki {
   gap: 10px;
   padding: 20px;
 }
 
 .boxy {
   border: 1px solid #ccc;
-  padding: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -54,15 +53,15 @@ main ul img {
   padding: 20px;
 }
 
-#voruflokkar {
+#voru-flokkar {
   gap: 20px;
   padding: 20px;
 }
 
-#voruflokkar li {
+#voru-flokkar li {
   text-align: center;
   padding: 10px;
-  border: 1px solid #000000;
+  border: 1px solid #000;
 }
 
 header {
@@ -88,18 +87,18 @@ main ul {
   grid-column: 12/span 3;
 }
 
-#voruflokkar {
+#voru-flokkar {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 400px) {
-  #voruflokkar {
+@media (width >= 400px) {
+  #voru-flokkar {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1000px) {
-  #voruflokkar {
+@media (width >= 1000px) {
+  #voru-flokkar {
     grid-template-columns: repeat(5, 1fr);
   }
 }
@@ -108,18 +107,24 @@ main ul {
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   #nyjar-vorur {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1350px) {
+@media (width >= 1350px) {
   #nyjar-vorur {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 900px) {
-  .varaOgLysing {
+#vara-og-lysing {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+@media (width >= 900px) {
+  #vara-og-lysing {
     flex-direction: row;
   }
 }
@@ -128,7 +133,7 @@ main ul {
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 650px) {
+@media (width >= 900px) {
   #likar-vorur {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -138,23 +143,23 @@ main ul {
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 650px) {
+@media (width >= 650px) {
   #vorurnar {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-#vorurUrFlokki {
+#vorur-ur-flokki {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 900px) {
-  #vorurUrFlokki {
+@media (width >= 900px) {
+  #vorur-ur-flokki {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1350px) {
-  #vorurUrFlokki {
+@media (width >= 1350px) {
+  #vorur-ur-flokki {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -200,10 +205,7 @@ header ul li a {
   background-color: #000;
   border: none;
   color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 10px 40px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -217,36 +219,35 @@ header ul li a {
   border: 1px solid #000;
 }
 
-/*vörulistinn*/
+/* vörulistinn */
 #vorurnar {
   gap: 10px;
   padding: 20px;
 }
 
-/*Vörusíða*/
-.varaOgLysing {
+/* Vörusíða */
+.box {
+  border: 1px solid #ccc;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  align-items: center;
+  padding: 10px;
 }
 
-.voruLysing {
+.box img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.voru-lysing {
   margin-left: 20px;
 }
 
 #adal-vara a {
   text-decoration: none;
   color: #000;
-}
-
-#adal-vara a:hover {
-  text-decoration: underline;
-}
-
-#adal-Vara img {
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
 }
 
 #likar-vorur {
@@ -259,24 +260,18 @@ header ul li a {
   color: #000;
 }
 
-#likar-vorur a:hover {
+#adal-vara img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#adal-vara a:hover {
   text-decoration: underline;
 }
 
-.box {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-.box img {
-  width: 250px;
-  height: 150px;
-  object-fit: cover;
+#likar-vorur a:hover {
+  text-decoration: underline;
 }
 
 .box h3, .box p {

@@ -33,7 +33,7 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/categories')
         return Response.json();
 })
     .then(data => {
-        const categoryContainer = document.querySelector('#voruflokkar');
+        const categoryContainer = document.querySelector('#voru-flokkar');
         categoryContainer.innerHTML = ''; 
 
         data.items.forEach(category => {
