@@ -1,10 +1,3 @@
-a {
-    text-decoration: none;
-    color: #000;
-}
-a:hover {
-    text-decoration: underline;
-}
 
 /*Forsíða*/
 header{
@@ -77,6 +70,30 @@ main ul img {
     border: 1px solid #000;
 }
 
+#voruflokkar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    
+}
+#voruflokkar li {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+@media (min-width: 400px) {
+    #voruflokkar {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1000px) {
+    #voruflokkar {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
 
 /*Vörusíða*/
 
@@ -95,8 +112,8 @@ main ul img {
 
 #likar-vorur {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
-    gap: 10px; /* Space between items */
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px; 
     padding: 20px;
 }
 
@@ -107,9 +124,14 @@ main ul img {
 #likar-vorur a:hover {
     text-decoration: underline;
 }
+@media (min-width: 650px)
+{
+    #likar-vorur {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
 
 .box {
-    /* Style for individual product boxes */
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -131,11 +153,64 @@ main ul img {
 .box h3, .box p {
     margin: 5px 0;
 }
+/*vörulistinn*/
+#vorurnar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px; 
+    padding: 20px;
+}
+@media (min-width: 650px)
+{
+    #vorurnar {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
 
 
+
+
+/*flokkasíða*/
+#vorurUrFlokki {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px; 
+    padding: 20px;
+}
+.boxy {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+}
+ @media (min-width: 900px)
+{
+    #vorurUrFlokki {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media (min-width: 1200px)
+{
+    #vorurUrFlokki {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
 /*almennt*/
 
 header h1 a {
     text-decoration: none;
     color:#fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
 }

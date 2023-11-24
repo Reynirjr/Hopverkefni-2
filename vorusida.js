@@ -52,16 +52,18 @@ function displayProducts(products, containerId, categoryTitle) {
 
     products.forEach(product => {
         productsMarkup += `
-            <a href="./vorusida.html?id=${product.id}">
-                <div class="box"> 
-                    <img src="${product.image}" alt="${product.title}" style="max-width: 100px;"> 
-                    <h3>${product.title}</h3>
-                </a>
-                <a href="./flokkasida.html?id=${product.category_id}">
-                    <p>${product.category_title}</p>
-                </a>
-                    <p>${product.price} kr.-</p>
-                </div>
+        <div class="box">
+        <a href="./vorusida.html?id=${product.id}">
+            <img src="${product.image}" alt="${product.title}" style="max-width: 100px;"> 
+            <h3>${product.title}</h3>
+        </a>
+        <p>
+            <a href="./flokkasida.html?id=${product.category_id}">${product.category_title}</a>
+        </p>
+        <p>
+            <a href="./vorusida.html?id=${product.id}">${product.price} kr.-</a>
+        </p>
+    </div>
             `;
     });
 
