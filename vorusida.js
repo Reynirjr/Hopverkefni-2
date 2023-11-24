@@ -28,7 +28,6 @@ if (productId) {
 
 function displayProductDetails(product) {
     const productMarkup = `
-    <div ="vara-og-lysing">
     <div class="vara">
     <img src="${product.image}" alt="${product.title}">
     </div>

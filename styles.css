@@ -117,14 +117,15 @@ main ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-#vara-og-lysing {
+#adal-vara {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
 
 @media (width >= 900px) {
-  #vara-og-lysing {
+  #adal-vara {
+    display: flex;
     flex-direction: row;
   }
 }
@@ -283,7 +284,7 @@ header ul li a {
   margin: 5px 0;
 }
 
-/*Easter egg*/
+/* Easter egg */
 .madur-i-potti {
   display: block;
   margin: 0 auto;
@@ -304,7 +305,7 @@ header ul li a {
   padding: 10px 15px;
   margin: 10px;
   background-color: #04432a;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
