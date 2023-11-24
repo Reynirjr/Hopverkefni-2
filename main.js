@@ -3,25 +3,27 @@ fetch('https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?limit=6')
         return Response.json();
 })
 .then(data => {
-    const productContainer = document.querySelector('#vorurnar');
+    const productContainer = document.querySelector('#nyjar-vorur');
     productContainer.innerHTML = '';
 
     data.items.forEach(product => {
         const markup = `
+        <div class="boxy">
             <li>
                 <a href="./sidur/vorusida.html?id=${product.id}">
                 <img src="${product.image}" alt="${product.title}">
-                <div>
+                
                     <h3>${product.title}</h3>
                 </a>
                 <a href="./sidur/flokkasida.html?id=${product.category_id}">
                     <p>${product.category_title}</p>
                 </a>
                     <p>Verð: $${product.price}</p>
-                </div>
+               
                 
-            </li>`;
-
+            </li>
+            </div>`;
+        
         productContainer.insertAdjacentHTML('beforeend', markup);
     });
 })
