@@ -170,7 +170,7 @@ main ul img {
 }
 
 .box img {
-    max-width: 100%;
+    max-width: 250px;
     height: 150px;
     object-fit: cover;
 }
